@@ -43,7 +43,7 @@ class App extends Component {
       return <AppPlaceholder />;
     }
 
-    if (!isAdmin && insights.chrome.getApp() === 'rbac') {
+    if (!isAdmin) {
       return <DeniedState/>;
     }
 
